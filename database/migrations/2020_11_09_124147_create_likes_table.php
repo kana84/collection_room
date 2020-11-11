@@ -17,7 +17,8 @@ class CreateLikesTable extends Migration
             $table->foreignId('user_id')->constrained();  //外部キー制約
             $table->foreignId('collection_id')->constrained();  //外部キー制約
             $table->primary(['user_id', 'collection_id']); 
-            $table->timestamps(0);
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'))->nullable(false);
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'))->nullable(false);
         });
     }
 

@@ -21,7 +21,8 @@ class CreateCollectionsTable extends Migration
             $table->longText('image_url');
             $table->string('item_name');
             $table->integer('item_price');
-            $table->timestamps(0);
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'))->nullable(false);
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'))->nullable(false);
             $table->softDeletes('deleted_at', 0);
         });
     }
