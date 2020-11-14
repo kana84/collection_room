@@ -1,0 +1,87 @@
+[33mcommit 07f662a06b7b802f7aff89e23c1b145fbd099dc1[m[33m ([m[1;36mHEAD -> [m[1;32mseed-data[m[33m)[m
+Author: kana84 <kana84.hashimoto@gmail.com>
+Date:   Fri Nov 13 22:51:53 2020 +0900
+
+    add seed datas
+
+[33mcommit 9c84d16a619e3accdc5d158843276ac34ea7593f[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmigration[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 445d561 26bc038
+Author: kana84 <62083846+kana84@users.noreply.github.com>
+Date:   Fri Nov 13 21:40:19 2020 +0900
+
+    Merge pull request #4 from kana84/migration
+    
+    add nickname column
+
+[33mcommit 26bc0387254bdca9f67ad8bb94fb1570c798ee3d[m[33m ([m[1;31morigin/migration[m[33m)[m
+Author: kana84 <kana84.hashimoto@gmail.com>
+Date:   Fri Nov 13 21:39:00 2020 +0900
+
+    add nickname column
+
+[33mcommit 445d5610fede3c794767e305e582c3a66f4771a5[m
+Merge: 280a5d5 660501b
+Author: kana84 <62083846+kana84@users.noreply.github.com>
+Date:   Thu Nov 12 21:35:32 2020 +0900
+
+    Merge pull request #3 from kana84/migration
+    
+    Migration
+
+[33mcommit 660501b235bc4fd9cbdf71d0d3986613c7bde434[m
+Author: kana84 <kana84.hashimoto@gmail.com>
+Date:   Thu Nov 12 21:19:29 2020 +0900
+
+    edit .gitignore
+
+[33mcommit 2f42e5a3f55d4729f3dfe6c69369bd02855431c7[m
+Author: kana84 <kana84.hashimoto@gmail.com>
+Date:   Thu Nov 12 21:16:15 2020 +0900
+
+    delete files
+
+[33mcommit 37ac16447cef75912ddcea5bf787cf8fc7491ffb[m
+Author: kana84 <kana84.hashimoto@gmail.com>
+Date:   Wed Nov 11 11:38:39 2020 +0900
+
+    migrations
+
+[33mcommit 3fe0848a81787dd535b549a1f929fb850adb55f8[m
+Merge: 541a3ca 280a5d5
+Author: kana84 <kana84.hashimoto@gmail.com>
+Date:   Tue Nov 10 15:46:14 2020 +0900
+
+    Merge branch 'master' into migration
+
+[33mcommit 541a3cad96af70ce6c62d0484f3af644786e56e7[m
+Author: kana84 <kana84.hashimoto@gmail.com>
+Date:   Mon Nov 9 22:28:34 2020 +0900
+
+    migrations
+
+[33mcommit 280a5d57a38308cb411370ed41d9f9cacf4424c9[m
+Merge: e5952f5 f0eef8e
+Author: kana84 <62083846+kana84@users.noreply.github.com>
+Date:   Mon Nov 9 09:05:10 2020 +0900
+
+    Merge pull request #1 from kana84/api-hello
+    
+    Api hello
+
+[33mcommit f0eef8e2ed8762fc80940c8488422e25e99861db[m[33m ([m[1;31morigin/develop[m[33m, [m[1;31morigin/api-hello[m[33m, [m[1;32mapi-hello[m[33m)[m
+Author: kana84 <kana84.hashimoto@gmail.com>
+Date:   Mon Nov 9 08:15:20 2020 +0900
+
+    Hello api
+
+[33mcommit 531dd41a26f30874bcdb31645661ca45bed2a942[m
+Author: kana84 <kana84.hashimoto@gmail.com>
+Date:   Sun Nov 8 21:38:20 2020 +0900
+
+    add files
+
+[33mcommit e5952f5550a97182faaa5108b4cc0e18d0a2d9fa[m
+Author: kana84 <kana84.hashimoto@gmail.com>
+Date:   Sun Nov 8 21:15:27 2020 +0900
+
+    first commit
