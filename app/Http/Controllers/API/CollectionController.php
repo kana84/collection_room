@@ -37,7 +37,7 @@ class CollectionController extends Controller
      */
     public function show($id)
     {
-        //
+        return Collection::find($id);
     }
 
     /**
