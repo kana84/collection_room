@@ -58,8 +58,13 @@ class CollectionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($collection)
     {
-        //
+        $delete_collection = Collection::find($collection);
+        $delete_collection->delete();
+
+        return $delete_collection;
+
+        
     }
 }
