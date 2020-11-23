@@ -24,9 +24,20 @@ class CollectionController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request,$user)
     {
-        //
+        $collection = new Collection;
+
+        $collection->user_id = $user;
+        $collection->item_cd = $request->item_cd;
+        $collection->item_url = $request->item_url; 
+        $collection->image_url = $request->image_url;
+        $collection->item_name = $request->item_name;
+        $collection->item_price = $request->item_price;
+        $collection->save();
+
+        return $collection;
+      
     }
 
     /**
@@ -58,8 +69,13 @@ class CollectionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($collection)
     {
-        //
+        $delete_collection = Collection::find($collection);
+        $delete_collection->delete();
+
+        return $delete_collection;
+
+        
     }
 }
