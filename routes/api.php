@@ -26,6 +26,8 @@ Route::group(['middleware'=>['api']], function() {
 
 Route::apiResource('/collections', 'API\CollectionController');
 
+Route::apiResource('/users', 'API\UserController');
+
 Route::apiResource('users.collections', 'API\CollectionController');
 
 

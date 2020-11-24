@@ -4,9 +4,9 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Collection;
+use App\User;
 
-class CollectionController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +15,7 @@ class CollectionController extends Controller
      */
     public function index()
     {
-        $collections = Collection::limit(5)->offset(0)->get();
-
-        return $collections;
-                            
+        //
     }
 
     /**
@@ -27,20 +24,9 @@ class CollectionController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request,$user)
+    public function store(Request $request)
     {
-        $collection = new Collection;
-
-        $collection->user_id = $user;
-        $collection->item_cd = $request->item_cd;
-        $collection->item_url = $request->item_url; 
-        $collection->image_url = $request->image_url;
-        $collection->item_name = $request->item_name;
-        $collection->item_price = $request->item_price;
-        $collection->save();
-
-        return $collection;
-      
+        //
     }
 
     /**
@@ -51,7 +37,7 @@ class CollectionController extends Controller
      */
     public function show($id)
     {
-        return Collection::find($id);
+        //
     }
 
     /**
@@ -61,9 +47,11 @@ class CollectionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, User $user)
     {
-        //
+        $user->update($request->all());
+
+        return $user;
     }
 
     /**
@@ -72,13 +60,8 @@ class CollectionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($collection)
+    public function destroy($id)
     {
-        $delete_collection = Collection::find($collection);
-        $delete_collection->delete();
-
-        return $delete_collection;
-
-        
+        //
     }
 }
