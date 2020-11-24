@@ -15,7 +15,10 @@ class CollectionController extends Controller
      */
     public function index()
     {
-        return Collection::all();
+        $collections = Collection::limit(5)->offset(0)->get();
+
+        return $collections;
+                            
     }
 
     /**
