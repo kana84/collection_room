@@ -13,9 +13,13 @@ class CollectionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $collections = Collection::limit(5)->offset(0)->get();
+        $limit = $request->input('limit');
+        $page = $request->input('page');
+        $offset = ($page-1)* $limit;
+
+        $collections = Collection::limit($limit)->offset($offset)->get();
 
         return $collections;
                             
