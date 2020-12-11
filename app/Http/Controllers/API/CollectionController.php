@@ -19,7 +19,13 @@ class CollectionController extends Controller
         $page = $request->input('page');
         $offset = ($page-1)* $limit;
 
-        $collections = Collection::limit($limit)->offset($offset)->get();
+        //²Á³Ê¤Çfilter
+        if($request->has('price')){
+            $price = $request->input('price');
+            $collections = Collection::where('item_price', '<=', $price)->limit($limit)->offset($offset)->get();
+        }else{
+            $collections = Collection::limit($limit)->offset($offset)->get();
+        }
 
         return $collections;
                             
