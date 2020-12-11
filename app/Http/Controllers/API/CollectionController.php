@@ -19,7 +19,7 @@ class CollectionController extends Controller
         $page = $request->input('page');
         $offset = ($page-1)* $limit;
 
-        $collections = Collection::limit($limit)->offset($offset)->get();
+        $collections = Collection::orderBy('updated_at','desc')->limit($limit)->offset($offset)->get();
 
         return $collections;
                             
